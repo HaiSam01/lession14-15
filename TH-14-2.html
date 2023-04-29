@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <tr> <th> Temperature Converter</th></tr>
+  <tr> <td>Type a Value in the Fahrenheit field to convert the value to celcius</td></tr>
+  <tr>
+    <td>
+      <label>Nhap Do F vao
+    <input type="number" id="value" oninput="changeFToC(this.value)">
+      </label>
+    </td>
+  </tr>
+  <tr><td id="view"></td></tr>
+
+</table>
+
+<script>
+
+ function changeFToC(value) {
+  let newvalue =  (value - 32) / 1.8;
+    document.getElementById("view").innerHTML = "Gia Tri Do C la" + newvalue;
+  }
+
+
+</script>
+</body>
+</html>

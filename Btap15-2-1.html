@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function binhPhuong(a){
+    return a*a;
+  }
+  function dientichhinhtron(bankinh){
+    return bankinh * bankinh * 3.14;
+  }
+  function chuvihinhtron(bankinh){
+    return 2 * bankinh * 3.14
+  }
+  function tinhGiaiThua(number){
+    let newNumber = 1;
+    for ( let i = 1; i <= number; i++){
+      newNumber *= i
+    }
+    return alert(newNumber);
+  }
+  function checkNumber(num){
+    let checknum = typeof 123;
+    let checkcheck = typeof num
+    if (checkcheck === checknum){
+      return alert("true");
+    } else {
+      return alert("false");
+    }
+  }
+  function checkNumber2(number1,number2,number3) {
+    if (number1 > number2){
+      if (number1 > number3){
+        alert(number1 + "La so lon nhat");
+      } else {
+        alert(number3 + "la so lon nhat");
+      }
+    } else if (number2 > number3){
+      alert(number2 + "La so lon nhat");
+    }else {
+      alert(number3 + "La so lon nhat")
+    }
+  }
+  function checkSoDuong(number){
+    if (number > 0){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  function doiCho(number1,number2){
+    let temp   = number1;
+    number1 = number2;
+    number2 = temp;
+  }
+  function reverseArray([array]){
+    return array.reverse()
+  }
+
+  function reverseArray(array,kytu) {
+    let index =0;
+for (let i = 0; i <array.length;i++){
+  if (kytu === array[i]){
+    index++;
+ }
+  }
+    if ( index === 0 ){
+      index = -1;
+    }
+return alert(index);
+  }
+  reverseArray(["i","b","d", "s","f","d","f","sgd"],"s")
+
+</script>
+</body>
+</html>
